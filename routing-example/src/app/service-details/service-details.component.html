@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Service Details</h2>
+  
+    <form (ngSubmit)="saveService()" class="form">
+      <div class="form-group">
+        <label for="serviceId">Service ID</label>
+        <input type="text" id="serviceId" class="form-control" [(ngModel)]="service.id" name="id" disabled>
+      </div>
+  
+      <div class="form-group">
+        <label for="serviceName">Service Name</label>
+        <input type="text" id="serviceName" class="form-control" [(ngModel)]="service.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="serviceDescription">Service Description</label>
+        <textarea id="serviceDescription" class="form-control" [(ngModel)]="service.description" name="description" rows="4" required></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="serviceCategory">Service Category</label>
+        <input type="text" id="serviceCategory" class="form-control" [(ngModel)]="service.category" name="category" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="servicePrice">Cost / Price</label>
+        <input type="number" id="servicePrice" class="form-control" [(ngModel)]="service.price" name="price" required>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

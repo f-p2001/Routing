@@ -1,0 +1,31 @@
+/* service-details.component.css */
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Add some margin to the form */
+  .form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Button styling */
+  button {
+    margin-right: 10px;
+  }
+  
+  button[type='submit'] {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button[type='button'] {
+    background-color: #6c757d;
+    color: white;
+  }
+  

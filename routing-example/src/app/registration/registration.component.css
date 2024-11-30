@@ -1,0 +1,68 @@
+/* Registration Container */
+.registration-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #8eb17b;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/* Header Style */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #395037; /* Dark Green for Header */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #395037; /* Dark Green for Labels */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #8eb17b; /* Light Green border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #395037; /* Dark Green background for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8eb17b; /* Light Green on hover */
+}
+
+button:active {
+    background-color: #2d4030; /* Darker Green when active */
+}
+
+/* Add padding around the form elements */
+form {
+    padding: 10px;
+}

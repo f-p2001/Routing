@@ -1,82 +1,106 @@
-/* Adjust the container and column settings */
+/* General container and background styles */
 .container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  
-  /* Title for both sections */
-  h2.text-center {
-    font-size: 24px;
-    font-weight: bold;
+  margin-top: 50px;
+  background-color: #8eb17b; /* Light background for the overall container */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* Section headers */
+h2 {
+  color: #395037; /* Dark green for headings */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.table {
+  background-color: white; /* White background for the table */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #395037; /* Dark green header */
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #8eb17b;
+}
+
+.table-bordered {
+  border: 1px solid #8eb17b;
+}
+
+.thead-dark {
+  background-color: #395037;
+  color: white;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #395037; /* Dark green for primary button */
+  border-color: #395037;
+}
+
+.btn-primary:hover {
+  background-color: #8eb17b; /* Light green on hover */
+  border-color: #8eb17b;
+}
+
+.btn-warning {
+  background-color: #f0ad4e; /* Yellow for edit button */
+  border-color: #f0ad4e;
+}
+
+.btn-warning:hover {
+  background-color: #8eb17b; /* Light green on hover */
+  border-color: #8eb17b;
+}
+
+.btn-danger {
+  background-color: #d9534f; /* Red for delete button */
+  border-color: #d9534f;
+}
+
+.btn-danger:hover {
+  background-color: #8eb17b; /* Light green on hover */
+  border-color: #8eb17b;
+}
+
+/* Style for action buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;  /* Stack buttons vertically */
+  gap: 5px;               /* Add space between buttons */
+}
+
+.action-buttons .btn {
+  width: 100%;             /* Make buttons take full width in the column */
+}
+
+/* Additional styling for buttons (optional) */
+.action-buttons .btn-sm {
+  margin-bottom: 10px; /* Optional: Add a little bottom margin to create extra space between buttons */
+}
+
+/* Optional: Add spacing between the columns on smaller screens */
+@media (max-width: 767px) {
+  .col-lg-6 {
     margin-bottom: 20px;
-    color: #333;
   }
-  
-  /* Styling for the Salon Services section */
-  .col-lg-6:first-child {
-    padding-right: 30px; /* Add spacing between columns */
-    border-right: 2px solid #ccc; /* Optional border for separation */
+
+  /* Make table scrollable on smaller screens */
+  .table-responsive {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
   }
-  
-  /* Table Styling */
-  .table {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-  }
-  
-  /* Add some padding and remove cell borders from table rows */
-  .table td, .table th {
-    padding: 10px;
-    vertical-align: middle;
-  }
-  
-  /* Dark background for table header */
-  .thead-dark th {
-    background-color: #343a40;
-    color: #fff;
-  }
-  
-  /* Hover effect for rows */
-  .table tbody tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  /* Button Styling */
-  .btn {
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-right: 5px;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  
-  /* Table column action buttons */
-  .btn-sm {
-    padding: 5px 10px;
-  }
-  
-  /* Optional: Customize the Delete button with red color */
-  .btn-danger {
-    background-color: #dc3545;
-    border: none;
-  }
-  
-  .btn-danger:hover {
-    background-color: #c82333;
-  }
-  
-  /* Optional: Add spacing between the columns on smaller screens */
-  @media (max-width: 767px) {
-    .col-lg-6 {
-      margin-bottom: 20px;
-    }
-  }
-  
+}

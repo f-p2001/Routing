@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';  // Import RouterLink
 import { CommonModule } from '@angular/common';
 import { ServiceDetailsComponent } from '../service-details/service-details.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css'],
-  imports: [RouterLink, CommonModule, ServiceDetailsComponent]  // Import RouterLink for standalone component
+  imports: [RouterLink, CommonModule, ServiceDetailsComponent, FooterComponent]  // Import RouterLink for standalone component
 })
 export class ServicesComponent implements OnInit {
 

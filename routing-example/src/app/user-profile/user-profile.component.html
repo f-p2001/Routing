@@ -1,1 +1,57 @@
-<p>user-profile works!</p>
+<div class="profile-container">
+    <h2>User Profile</h2>
+  
+    <!-- Profile Image Section -->
+    <div class="profile-image">
+      <label for="profileImage">Profile Image</label>
+      <input type="file" id="profileImage" name="profileImage" accept="image/*">
+    </div>
+  
+    <!-- Name Section -->
+    <div class="name-section">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+  
+      <label for="middleName">Middle Name</label>
+      <input type="text" id="middleName" name="middleName" placeholder="Enter Middle Name">
+  
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+    </div>
+  
+    <!-- Mailing Address Section -->
+    <div class="address-section">
+      <h3>Mailing Address</h3>
+  
+      <label for="houseNumber">House #</label>
+      <input type="text" id="houseNumber" name="houseNumber" placeholder="Enter House #">
+  
+      <label for="street">Street</label>
+      <input type="text" id="street" name="street" placeholder="Enter Street">
+  
+      <label for="barangay">Barangay</label>
+      <input type="text" id="barangay" name="barangay" placeholder="Enter Barangay">
+  
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="Enter City">
+  
+      <label for="province">Province</label>
+      <input type="text" id="province" name="province" placeholder="Enter Province">
+    </div>
+  
+    <!-- Email Address Section -->
+    <div class="email-section">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email">
+    </div>
+  
+    <!-- Mobile Number Section -->
+    <div class="mobile-section">
+      <label for="mobileNumber">Mobile Number</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number">
+    </div>
+  
+    <button type="submit">Save Profile</button>
+  </div>
+  
+<app-footer></app-footer>
